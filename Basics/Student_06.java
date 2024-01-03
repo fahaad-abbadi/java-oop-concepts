@@ -1,6 +1,6 @@
 package Basics;
 
-//here, we use this main function
+//here, we use the main function
 //'new' is a keyword, it is used to create objects
 //objects are a physical entity which are created inside heap
 

@@ -8,7 +8,7 @@ public class Student_11 {
     //if we are using the parameters as same as the class variables, we have to use 'this' keyword
     public Student_11(int roll, String name)
     {
-        roll = roll;
+        this.roll = roll;
         this.name = name;
     }
 
