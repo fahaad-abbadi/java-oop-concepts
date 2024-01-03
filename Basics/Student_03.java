@@ -1,5 +1,6 @@
 package Basics;
 
+//Classes can have data members and also methods, which are functions but inside the class
 public class Student_03 {
     int roll;
     String s_name;
