@@ -1,9 +1,9 @@
 package Intermediate;
 
 public class Vehicle_02 {
-    int no_of_wheels;
-    int max_speed;
-    int fuel_capacity;
+    int noOfWheels;
+    int maxSpeed;
+    int fuelCapacity;
 
     boolean isGear;
 
@@ -13,10 +13,10 @@ public class Vehicle_02 {
     }
 
     //using a parameterized constructor
-    public Vehicle_02(int no_of_wheels, int max_speed, boolean isGear)
+    public Vehicle_02(int noOfWheels, int maxSpeed, boolean isGear)
     {
-        this.no_of_wheels = no_of_wheels;
-        this.max_speed = max_speed;
+        this.noOfWheels = noOfWheels;
+        this.maxSpeed = maxSpeed;
         this.isGear = isGear;
     }
 
@@ -32,9 +32,9 @@ public class Vehicle_02 {
     }
 
     public static void main(String[] args) {
-        Vehicle_01 v = new Vehicle_01(3, 70, true);
+        Vehicle_02 v = new Vehicle_02(3, 70, true);
     
-        System.out.println(v.max_speed);
+        System.out.println(v.maxSpeed);
     }
 }
 
