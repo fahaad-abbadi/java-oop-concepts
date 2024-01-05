@@ -30,17 +30,21 @@ public class Vehicle_02 {
     {
         System.out.println("Stopping...");
     }
-
-    public static void main(String[] args) {
-        Vehicle_02 v = new Vehicle_02(3, 70, true);
-    
-        System.out.println(v.maxSpeed);
-    }
 }
 
 
 class Car extends Vehicle_02
 {
     boolean isElectric;
+    boolean isNitro;
 
+    public static void main(String[] args) {
+        Car c = new Car();
+
+        c.isElectric = true;
+        c.isNitro = false;
+
+        System.out.println(c.isElectric);
+        System.out.println(c.isNitro);
+    }
 }
