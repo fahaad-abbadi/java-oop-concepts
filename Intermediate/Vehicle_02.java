@@ -32,19 +32,41 @@ public class Vehicle_02 {
     }
 }
 
-
+//the below concept is known as Inheritance
 class Car extends Vehicle_02
 {
     boolean isElectric;
     boolean isNitro;
 
+    public Car(boolean isElectric, boolean isNitro)
+    {
+        this.isElectric = isElectric;
+        this.isNitro = isNitro;
+    }
+
+    //method over-riding
+    public void accelarate()
+    {
+        System.out.println("This vehicle is speeding up even better");
+    }
+
     public static void main(String[] args) {
-        Car c = new Car();
+        Car c = new Car(true, false);
 
-        c.isElectric = true;
-        c.isNitro = false;
+        if(c.isElectric)
+        {
+            System.out.println("This is electric car");
+        }
 
-        System.out.println(c.isElectric);
-        System.out.println(c.isNitro);
+        if(c.isNitro)
+        {
+            System.out.println("This car even has Nitro");
+        }
+        else
+        {
+            System.out.println("No, it's a normal car");
+        }
+
+        c.accelarate();
     }
 }
